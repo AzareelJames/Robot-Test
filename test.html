@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <iframe src="index.html" frameborder="3" id="robotTest"></iframe>
+
+    <script>
+    window.addEventListener("message", e => {
+        if(e.data["Robot Test Passed"]){
+            const robotTest = document.getElementById("robotTest");
+            robotTest.hidden = true;
+
+            window.open("https://google.com");
+        }
+    });
+    </script>
+</body>
+</html>

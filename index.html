@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+    <title>Robot Test</title>
+</head>
+<body>
+    <p>Robot Test:</p>
+    <p>Press the button to take a test.</p>
+    <button onclick="play()" id="btn">Take a Test</button>
+
+    <div id="test" hidden>
+    <p class="test">Enter a number:</p>
+    <img alt="This Image has been failed, please try again!" class="test" width="125" draggable="false">
+    <input type="text" class="test" placeholder="Enter number here!">
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
