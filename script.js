@@ -36,7 +36,7 @@ function play(){
     }
 
     let rand = random(1, numOfImgs);
-    const ORGIN = window.location.href;
+    const ORGIN = window.prompt("Please enter the Current URL To proceed");
 
 
     test.hidden = false;
@@ -73,3 +73,4 @@ function play(){
     });
 
 }
+
