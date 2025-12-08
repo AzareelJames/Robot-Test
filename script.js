@@ -41,7 +41,7 @@ function play(){
 
     test.hidden = false;
 
-    elements[1].src = `images/${rand}.png`;
+    elements[1].src = `Images/${rand}.png`;
 
     let running = true;
 
@@ -68,7 +68,8 @@ function play(){
             elements[0].textContent = "Please try again";
 
             rand = random(1, numOfImgs);
-            elements[1].src = `images/${rand}.png`;
+            elements[1].src = `Images/${rand}.png`;
         }
     });
+
 }
