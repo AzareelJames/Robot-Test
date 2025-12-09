@@ -47,7 +47,6 @@ function play(){
 
     try{
 
-    eval(`
 
     elements[2].addEventListener("keydown", e => {
         if(running) if(e.key !== "Enter") return;
@@ -72,15 +71,15 @@ function play(){
             elements[0].textContent = "Please try again";
 
             rand = random(1, numOfImgs);
-            elements[1].src = \`Images/${rand}.png\`;
+            elements[1].src = `Images/${rand}.png`;
         }
     });
-        `);
     } catch{
         window.alert("Please Enter the real URL.\nPress 'Take a Test' to restart and enter the correct URL.");
     }
 
 }
+
 
 
 
