@@ -25,5 +25,4 @@ A robot test is similar to CAPCTHA.
     });
 
 # Tip:
-    Not all robots can't solve it.
-    ChatGPT can solve Captcha and Robot Test.
+    When it does nothing, press "Take a Test" again and enter the correct URL.
