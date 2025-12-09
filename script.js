@@ -45,6 +45,8 @@ function play(){
 
     let running = true;
 
+    try{
+
     elements[2].addEventListener("keydown", e => {
         if(running) if(e.key !== "Enter") return;
 
@@ -71,6 +73,10 @@ function play(){
             elements[1].src = `Images/${rand}.png`;
         }
     });
+    } catch{
+        window.alert("Please Enter the real URL.\nPress 'Take a Test' to restart and enter the correct URL.");
+    }
 
 }
+
 
